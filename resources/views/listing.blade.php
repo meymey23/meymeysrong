@@ -1,135 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Cozy Villa - LaraBnb</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #fff; }
+        header, footer { padding: 1rem 2rem; background: #f8f8f8; }
+        .logo { color: #e91e63; font-weight: bold; font-size: 1.5rem; }
+        .btn { padding: 0.5rem 1rem; border: none; cursor: pointer; }
+        .btn-primary { background: #e91e63; color: white; }
+        .btn-outline { background: white; color: black; border: 1px solid #ccc; }
+        .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; padding: 2rem; }
+        .images { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; }
+        .images img { width: 100%; border-radius: 8px; }
+        .booking { border: 1px solid #ccc; padding: 1rem; border-radius: 8px; }
+        .footer { text-align: center; font-size: 0.9rem; color: #666; }
+    </style>
 </head>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f9f9f9;
-    color: #333;
-}
-
-header {
-    background: #4a90e2;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.photos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    padding: 20px;
-}
-
-.photo {
-    background: #ddd;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.about {
-    flex: 2;
-    margin-right: 20px;
-}
-
-.booking {
-    flex: 1;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.booking h3 {
-    margin-top: 0;
-}
-
-.reserve-btn {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.reserve-btn:hover {
-    background: #c0392b;
-}
-
-.note {
-    font-size: 12px;
-    color: #777;
-    margin-top: 10px;
-    text-align: center;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-</style>
 <body>
     <header>
-        <h1>Cozy Villa</h1>
-        <p>Claraburgh, Tunisia · New Listing</p>
-        <p>Hosted by Test User</p>
+        <div class="logo">LaraBnb</div>
+        <div style="float:right;">
+            <button class="btn btn-outline">Login</button>
+            <button class="btn btn-primary">Sign Up</button>
+        </div>
     </header>
 
-    <section class="photos">
-        <div class="photo">Main Photo</div>
-        <div class="photo">Bedroom</div>
-        <div class="photo">Kitchen</div>
-        <div class="photo">Bathroom</div>
-        <div class="photo">View</div>
-    </section>
-
-    <main class="content">
-        <div class="about">
+    <main class="grid">
+        <section>
+            <h1>Cozy Villa</h1>
+            <p>Ghazelabourg, Tunisia · <strong>New Listing</strong> · Hosted by Test User</p>
+            <div class="images">
+                <img src="/images/cozyvilla.jpg" alt="Main Photo">
+                <div>
+                    <img src="/images/bedroom.jpg" alt="Bedroom">
+                    <img src="/images/kitchen.jpg" alt="Kitchen">
+                    <img src="/images/bathroom.jpg" alt="Bathroom">
+                    <img src="/images/view.jpg" alt="View">
+                </div>
+            </div>
             <h2>About this space</h2>
-            <p>6 bedrooms · 2 bathrooms</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
+            <p>🛏️ 6 Bedrooms · 🚿 2 Bathrooms</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
 
         <aside class="booking">
-            <h3>$298 / night</h3>
+            <h3>$298 /night</h3>
             <form>
-                <label>Check-in</label>
-                <input type="date" name="checkin">
-                <label>Check-out</label>
-                <input type="date" name="checkout">
-                <button type="submit" class="reserve-btn">Reserve Now</button>
-                <p class="note">You won't be charged yet</p>
+                <label>Check-in</label><br>
+                <input type="date" name="checkin"><br><br>
+                <label>Check-out</label><br>
+                <input type="date" name="checkout"><br><br>
+                <button class="btn btn-primary">Reserve Now</button>
+                <p style="font-size: 0.8rem; color: #666;">You won’t be charged yet</p>
             </form>
         </aside>
     </main>
 
-    <footer>
-        <p>© 2026 LaraBnb Vacation Rentals. Built with Laravel.</p>
+    <footer class="footer">
+        © 2026 LaraBnb Vacation Rentals. Built with Laravel.
     </footer>
 </body>
 </html>

@@ -102,7 +102,7 @@ footer {
         </div>
         <div class="card">
             <img src="images/cozyvilla.jpg" alt="Cozy Villa" >
-            <a class="btn btn-success" href="{{ route ('listing')}}" role="button">Check In </a>
+            <a class="btn btn-primary" href="{{ route ('listing')}}" role="button">Detail</a>
 
             <h2>Cozy Villa</h2>
             <p>$298 / night</p>
