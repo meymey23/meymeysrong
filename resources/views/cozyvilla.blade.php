@@ -20,11 +20,9 @@
 </head>
 <body>
     <header>
-        <div class="logo">LaraBnb</div>
-        <div style="float:right;">
-            <button class="btn btn-outline">Login</button>
-            <button class="btn btn-primary">Sign Up</button>
-        </div>
+        <div class="logo">welcome to cozy Villa </div>
+        
+        
     </header>
 
     <main class="grid">
@@ -38,24 +36,14 @@
                     <img src="/images/kitchen.jpg" alt="Kitchen">
                     <img src="/images/bathroom.jpg" alt="Bathroom">
                     <img src="/images/view.jpg" alt="View">
+                    <a class="btn btn-primary" href="{{ route ('reserve')}}" role="button">Book Now</a>
+
                 </div>
             </div>
             <h2>About this space</h2>
             <p>🛏️ 6 Bedrooms · 🚿 2 Bathrooms</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
-
-        <aside class="booking">
-            <h3>$298 /night</h3>
-            <form>
-                <label>Check-in</label><br>
-                <input type="date" name="checkin"><br><br>
-                <label>Check-out</label><br>
-                <input type="date" name="checkout"><br><br>
-                <button class="btn btn-primary">Reserve Now</button>
-                <p style="font-size: 0.8rem; color: #666;">You won’t be charged yet</p>
-            </form>
-        </aside>
     </main>
 
     <footer class="footer">

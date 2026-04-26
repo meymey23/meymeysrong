@@ -34,8 +34,21 @@ Route::get('/', function () {
     return view('index', ['data'=>$data]);
 }) -> name('home');
 // routes/web.php
-Route::get('listing', function (){
+Route::get('cozyvilla', function (){
     // For now, we’ll just return a static view.
     // Later you can fetch listing data from a database.
-    return view('listing');
-}) -> name('listing');
+    return view('cozyvilla');
+}) -> name('cozyvilla');
+Route::get('/login',function(){
+      return view('login');
+
+}) -> name('login');
+Route:: get('homepage', function(){
+     return view('homepage');
+}) -> name('homepage');
+Route:: get('signup', function(){
+    return view('signup');
+}) -> name('signup');
+Route:: get('reserve',function(){
+    return view('reserve');
+})->name('reserve');

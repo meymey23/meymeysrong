@@ -64,8 +64,7 @@ footer {
         <h1>Explore Stays</h1>
         <p>Book unique places to stay and things to do</p>
         <nav>
-              <a class="btn btn-primary" href="{{ route ('login')}}" role="button">Login</a>
-              <a class="btn btn-primary" href="{{ route ('signup')}}" role="button">sign up</a>
+              <a class="btn btn-primary" href="{{ route ('home')}}" role="button">logout</a>
 
         </nav>
     </header>
@@ -73,40 +72,31 @@ footer {
     <main class="grid-container">
         <div class="card">
             <img src="images/rusticvilla.jpg" alt="Rustic Cabin">
-            <a class="btn btn-primary" href="" role="button">Detail</a>
-
             <h2>Rustic Cabin</h2>
             <p>$199 / night</p>
             <p>4 beds · 1 baths</p>
         </div>
         <div class="card">
             <img src="images/modernvilla.jpg" alt="Modern Villa">
-            <a class="btn btn-primary" href="" role="button">Detail</a>
-
             <h2>Modern Villa</h2>
             <p>$56 / night</p>
             <p>1 beds · 2 baths</p>
         </div>
         <div class="card">
             <img src="images/luxuryvilla.jpg" alt="Luxury Villa">
-             <a class="btn btn-primary" href="" role="button">Detail</a>
-
             <h2>Luxury Villa</h2>
             <p>$618 / night</p>
             <p>4 beds · 1 baths</p>
         </div>
-        
         <div class="card">
             <img src="images/modernapart.jpg" alt="Modern Apartment">
-            <a class="btn btn-primary" href="" role="button">Detail</a>
-
             <h2>Modern Apartment</h2>
             <p>$264 / night</p>
             <p>6 beds · 4 baths</p>
         </div>
         <div class="card">
             <img src="images/cozyvilla.jpg" alt="Cozy Villa" >
-            <a class="btn btn-primary" href="" role="button">Detail</a>
+            <a class="btn btn-primary" href="{{ route ('cozyvilla')}}" role="button">Detail</a>
 
             <h2>Cozy Villa</h2>
             <p>$298 / night</p>
